@@ -1,8 +1,4 @@
 .character {
-  &__h2 {
-    font-size: 2rem;
-    font-weight: 700;
-  }
 
   &__ul {
     display: flex;
@@ -13,27 +9,17 @@
 
     @media(min-width: 768px) {
       flex-direction: row;
+      align-items: end;
     }
   }
 
   &__li {
-    max-width: 300px;
-    // border: solid 1px $first;
-    box-shadow: 1px 1px 10px $first;
-    border-radius: 5px;
-    margin-bottom: 2rem;
+    @include card;
 
     &__img {
       width: 100%;
-      border-radius: 5px;
+      border-radius: $border-radius-padrao;
     }
-  }
-
-  &__h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 1rem 0;
   }
 
   &__p {

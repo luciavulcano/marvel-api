@@ -1,0 +1,25 @@
+.comics {
+  padding-top: 100px;
+
+  &__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media(min-width: 768px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  &__article {
+    @include card;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: $border-radius-padrao;
+  }
+}

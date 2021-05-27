@@ -2,7 +2,7 @@ import axios from 'axios';
 import md5 from 'md5';
 
 const ts = Number(new Date());
-const publicApiKey = '1f8d1ff44e32859d7842082f62c0c6da';
+const publicApiKey = '';
 const privateApiKey = '';
 const hash = md5(ts + privateApiKey + publicApiKey);
 

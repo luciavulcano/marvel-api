@@ -2,6 +2,9 @@
 @import './global/variables.scss';
 @import './global/functions.scss';
 @import './pages/characters.scss';
+@import './pages/navbar.scss';
+@import './pages/comics.scss';
+@import './pages/home.scss';
 
 body {
   font-family: $font-family-marvel;
@@ -22,4 +25,25 @@ section {
   @media (min-width: 1440px) {
     padding: 1.7rem 5rem;
   }
+}
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h2;
+}
+
+h3,
+label {
+  @include h3;
+}
+
+input {
+  @include input;
+}
+
+.no {
+  display: none;
 }

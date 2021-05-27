@@ -1,0 +1,49 @@
+.navbar {
+  background-color: $first;
+  height: 6.25rem;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    margin: auto;
+    display: flex;
+  }
+
+  &__img {
+    width: 30%;
+    align-self: center;
+    margin: auto;
+
+    @media(min-width: 760px) {
+      width: 5%;
+    }
+  }
+
+  &__ul {
+    margin: 1rem 0;
+    display: flex;
+
+    li {
+      color: $third;
+      padding: 0 1.5rem;
+      font-size: 1rem;
+
+      @media(min-width: 768px) {
+        font-size: 2rem;
+      }
+
+      a {
+        cursor: pointer;
+
+        &:hover {
+          font-weight: 700;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

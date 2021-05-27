@@ -15,9 +15,10 @@ const Characters: React.FC = () => {
   const [characters, setCharacters] = useState<ResponseData[]>([])
   useEffect(() => {
     api
-      .get('/characters')
+      .get('/characters?limit=40')
       .then(response => {
         setCharacters(response.data.data.results);
+        console.log(response.data.data.results);
       })
       .catch(err => console.log(err))
   }, [])
@@ -29,7 +30,15 @@ const Characters: React.FC = () => {
       {characters.map(character => {
         return (
           <li className="character__li">
-            <img src={`${character.thumbnail.path}.${character.thumbnail.extension}`} alt={`Imagem do super-héroi ${character.name}`} className="character__li__img" />
+            <img src={
+
+              `${character.thumbnail.path}.${character.thumbnail.extension}`
+
+
+
+            }
+
+              alt={`Imagem do super-héroi ${character.name}`} className="character__li__img" />
             <h3 className="character__h3">{character.name}</h3>
             <p className="character__p">{character.description}</p>
           </li>
