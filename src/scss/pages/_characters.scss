@@ -1,6 +1,12 @@
 .character {
+  padding-top: 100px;
 
-  &__ul {
+  input {
+    margin-bottom: 2rem;
+
+  }
+
+  &__div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -13,13 +19,13 @@
     }
   }
 
-  &__li {
-    @include card;
+  &__img {
+    width: 100%;
+    border-radius: $border-radius-padrao;
+  }
 
-    &__img {
-      width: 100%;
-      border-radius: $border-radius-padrao;
-    }
+  &__article {
+    @include card;
   }
 
   &__p {

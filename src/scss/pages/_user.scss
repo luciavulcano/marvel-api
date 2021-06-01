@@ -1,3 +1,42 @@
 .user {
   @include background;
+
+  &__div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+
+    &--column {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+
+  }
+
+  &__img {
+    width: 50%;
+    border: solid 3px;
+    border-radius: 100%;
+
+    @media(min-width: 768px) {
+      width: 20%;
+    }
+
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $first;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: .5rem 0;
+    cursor: pointer;
+    font-weight: 700;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
