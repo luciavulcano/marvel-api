@@ -28,21 +28,29 @@ const Characters: React.FC = () => {
     <h2 className="character__h2">Characters</h2>
     <ul className="character__ul">
       {characters.map(character => {
-        return (
-          <li className="character__li">
-            <img src={
 
-              `${character.thumbnail.path}.${character.thumbnail.extension}`
+        const notFound = `http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available`;
+        if (character.thumbnail.path === notFound) {
+
+          return <div className="no"></div>
+        } else {
+          return (
+            <li className="character__li">
+              <img src={
+
+                `${character.thumbnail.path}.${character.thumbnail.extension}`
 
 
 
-            }
+              }
 
-              alt={`Imagem do super-héroi ${character.name}`} className="character__li__img" />
-            <h3 className="character__h3">{character.name}</h3>
-            <p className="character__p">{character.description}</p>
-          </li>
-        )
+                alt={`Imagem do super-héroi ${character.name}`} className="character__li__img" />
+              <h3 className="character__h3">{character.name}</h3>
+              <p className="character__p">{character.description}</p>
+            </li>
+          )
+        }
+
       })
       }
     </ul>

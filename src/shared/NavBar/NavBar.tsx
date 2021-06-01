@@ -5,18 +5,8 @@ const NavBar = () => {
     <>
       <nav className="navbar">
 
-        <a href="">
-          <img src="https://i.imgur.com/GkxHb9d.png" alt="Logo da Marvel" className="navbar__img" />
-        </a>
 
-        <ul className="navbar__ul">
-          <li className="navbar__link">
-            <a>Personagens</a>
-          </li>
-          <li className="navbar__link">
-            <a>Quadrinhos</a>
-          </li>
-        </ul>
+        <img src="https://i.imgur.com/GkxHb9d.png" alt="Logo da Marvel" className="navbar__img" />
 
       </nav>
     </>

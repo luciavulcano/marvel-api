@@ -2,9 +2,7 @@ import React from 'react';
 import './scss/App.scss'
 import NavBar from './shared/NavBar/NavBar';
 import { BrowserRouter as Router } from "react-router-dom";
-import Characters from './pages/personagens/index'
-import Comics from './pages/comics/index';
-import Home from "./pages/home/Home";
+import User from "./pages/user/User";
 
 
 const App: React.FC = () => {
@@ -13,7 +11,7 @@ const App: React.FC = () => {
 
     <Router>
       <NavBar />
-      <Home />
+      <User />
     </Router>
   )
 

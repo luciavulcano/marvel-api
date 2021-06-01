@@ -1,15 +1,26 @@
-import { homedir } from 'os';
-import React, { useEffect, useState } from 'react';
-import api from '../../services/api.js';
+import React from 'react';
+
+import InputComic from './Input'
+
+
 
 const Home: React.FC = () => {
 
   return (
-
     <section className="home">
-      <h1>Organizador Marvel</h1>
+      <h3>Faça login para acessar seus quadrinhos e personagens preferidos</h3>
 
-      <div className="home__div">
+      <form className="home__form">
+        <label>e-mail</label>
+        <input type="email" placeholder="Digite seu e-mail cadastrado" />
+        <label>senha</label>
+        <input type="text" placeholder="Digite sua senha" />
+        <a href="/user/User" className="home__botao">
+          Entrar
+        </a>
+      </form>
+
+      {/* <div className="home__div">
         <form className="home__form">
           <label htmlFor="Procure por personagem">
             Procure por personagem
@@ -20,9 +31,10 @@ const Home: React.FC = () => {
           <label htmlFor="Procure por quadrinho">
             Procure por quadrinho
         </label>
-          <input type="text" id="filter-comics" placeholder="Digite o nome do quadrinho" />
+          <InputComic />
         </form>
-      </div>
+
+      </div> */}
     </section>
   )
 

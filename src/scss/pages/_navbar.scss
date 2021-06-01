@@ -14,12 +14,12 @@
   }
 
   &__img {
-    width: 30%;
+    width: 70%;
     align-self: center;
     margin: auto;
 
     @media(min-width: 760px) {
-      width: 5%;
+      width: 30%;
     }
   }
 

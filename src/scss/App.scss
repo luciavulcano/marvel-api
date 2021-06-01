@@ -5,14 +5,13 @@
 @import './pages/navbar.scss';
 @import './pages/comics.scss';
 @import './pages/home.scss';
+@import './pages/user.scss';
 
 body {
   font-family: $font-family-marvel;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-
 }
 
 section {
@@ -42,6 +41,14 @@ label {
 
 input {
   @include input;
+}
+
+button {
+  @include botao;
+}
+
+.busca__card {
+  font-size: 5rem;
 }
 
 .no {
